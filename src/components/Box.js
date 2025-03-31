@@ -12,7 +12,15 @@ const Box = (props) => {
         <div className='box'>
             <h2 className={`${result}`}>{result}</h2>
             <h3>{props.title}</h3>
-            <img width={100} src={props.item && props.item.img} alt='img'/>
+            {/* <img width={100} src={props.item && props.item.img} alt='img' style={{ imageRendering: "pixelated" }}/> */}
+            {props.item && (
+              <img
+                width={100}
+                src={props.item.img}
+                alt={props.item.name}
+              />
+            )}
+        
         </div>
     </div>
   )

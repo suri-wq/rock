@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 
 const Box = (props) => {
   
@@ -13,7 +12,7 @@ const Box = (props) => {
         <div className='box'>
             <h2 className={`${result}`}>{result}</h2>
             <h3>{props.title}</h3>
-            <img width={100} src={props.item && props.item.img}/>
+            <img width={100} src={props.item && props.item.img} alt='img'/>
         </div>
     </div>
   )

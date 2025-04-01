@@ -7,19 +7,19 @@ const Box = (props) => {
   } else {
     result = props.result;
   }
+  
+  console.log("props.item",props.item)
   return (
     <div>
         <div className='box'>
             <h2 className={`${result}`}>{result}</h2>
             <h3>{props.title}</h3>
             {/* <img width={100} src={props.item && props.item.img} alt='img' style={{ imageRendering: "pixelated" }}/> */}
-            {props.item && (
-              <img
-                width={100}
-                src={props.item.img}
-                alt={props.item.name}
-              />
-            )}
+            <img
+              width={100}
+              src={props.item ? props.item.img : "/img/question.png"}
+              alt={props.item ? props.item.name : "question"}
+            />
         
         </div>
     </div>

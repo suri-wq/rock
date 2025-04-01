@@ -11,7 +11,7 @@ const Box = (props) => {
   console.log("props.item",props.item)
   return (
     <div>
-        <div className='box'>
+        <div className={`box ${result}`}>
             <h2 className={`${result}`}>{result}</h2>
             <h3>{props.title}</h3>
             {/* <img width={100} src={props.item && props.item.img} alt='img' style={{ imageRendering: "pixelated" }}/> */}

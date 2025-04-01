@@ -50,12 +50,22 @@ button:hover{
   cursor: pointer;
 }
 
-.win{color:blue;}
+.win{color:blue}
 .lose{color:red}
 .tie{color:green}
+
+.win img{
+  border: 5px solid blue
+}
+.lose img{
+  border: 5px solid red
+}
+.tie img{
+  border: 5px solid green
+}
 
 .reset-btn{
   margin-bottom:50px;
   border:1px solid #ccc;
-  
+
 }
